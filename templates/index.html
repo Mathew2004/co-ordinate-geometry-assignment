@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pair of Straight Lines</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="header">
+            <h1>Pair of Straight Lines and Change of Axes</h1>
+        </div>
+        <div class="form-container">
+            <h2>Input Second-Degree Equation Coefficients</h2>
+            <form action="/solve" method="POST">
+                <div class="input-group">
+                    <input type="number" step="any" name="A" id="A" required placeholder="x²">
+                    <label>x²</label>
+                    <span>+</span>
+                    <input type="number" step="any" name="H" id="H" requiredplaceholder="2Hxy">
+                    <label>2Hxy</label>
+                    <span>+</span>
+                    <input type="number" step="any" name="B" id="B" required placeholder="y²">
+                    <label>y²</label>
+                    <span>+</span>
+                    <input type="number" step="any" name="G" id="G" required placeholder="2Gx">
+                    <label>2Gx</label>
+                    <span>+</span>
+                    <input type="number" step="any" name="F" id="F" required placeholder="2Fx">
+                    <label>2Fx</label>
+                    <span>+</span>
+                    <input type="number" step="any" name="C" id="C" required placeholder="C">
+                    <label>C</label>
+                    <span>= 0</span>
+                </div>
+                <button type="submit" class="btn">Generate</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+
+

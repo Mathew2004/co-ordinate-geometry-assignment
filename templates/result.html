@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Pair of Straight Lines and Change of Axes</h1>
+        </div>
+
+        {% if success %}
+        <p>The input equation is:</p>
+        <p><strong>{{ equation }}</strong></p>
+        <p>This equation represents a pair of straight lines. Below are the equations of the two lines:</p>
+
+        <h3>Line 1:</h3>
+        <p><strong>{{ line1_eq }}</strong></p>
+
+        <h3>Line 2:</h3>
+        <p><strong>{{ line2_eq }}</strong></p>
+
+        <p>Below is the plot of the lines:</p>
+        <img src="{{ url_for('static', filename='plot.png') }}" alt="Plot of the lines">
+        {% else %}
+        <h2>The equation does not represent a pair of straight lines.</h2> <br><br><br>
+        {% endif %}
+
+        <a href="/" class="btn">Go back to input form</a>
+    </div>
+</body>
+
+</html>
