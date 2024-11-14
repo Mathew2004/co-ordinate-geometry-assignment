@@ -6,7 +6,9 @@ Pair of Straight Lines and Change of Axes
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/Mathew2004/co-ordinate-geometry-assignment.git
-   cd your-repositoryco-ordinate-geometry-assignment
+   ```
+   ```bash
+   cd co-ordinate-geometry-assignment
 2. **Install dependencies:**
    ```bash
    pip install -r requirements.txt
